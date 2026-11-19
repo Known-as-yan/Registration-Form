@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="wrap">
+
+    <header class="head">
+        <h1>Larano- Registration Form</h1>
+        <p>Fields marked with an asterisk (*) are required.</p>
+    </header>
+
+    <form action="#success" method="get">
+
+        <fieldset class="card">
+
+                <section class="group">
+
+                    <h2>Account</h2>
+
+                    <div class="grid">
+
+                        <div class="field full">
+
+                            <label for="username" class="req">
+                                Username
+                            </label>
+
+                            <input
+                                id="username"
+                                name="username"
+                                type="text"
+                                required
+                                minlength="5"
+                                maxlength="12"
+                                placeholder="johncruz"
+                            >
+
+                            <p class="hint">
+                                5 to 12 characters.
+                            </p>
+
+                            <p class="err">
+                                Username must be 5 to 12 characters.
+                            </p>
+
+                        </div>
+
+                        <div class="field">
+
+                            <label for="password" class="req">
+                                Password
+                            </label>
+
+                            <input
+                                id="password"
+                                type="password"
+                                required
+                                minlength="8"
+                                maxlength="16"
+                                placeholder="8 to 16 characters"
+                            >
+
+                            <p class="err">
+                                Password must be 8 to 16 characters.
+                            </p>
+
+                        </div>
+
+                        <div class="field">
+
+                            <label for="confirm" class="req">
+                                Confirm password
+                            </label>
+
+                            <input
+                                id="confirm"
+                                type="password"
+                                required
+                                minlength="8"
+                                maxlength="16"
+                                placeholder="Type it again"
+                            >
+
+                            <p class="err">
+                                Confirm password must be 8 to 16 characters.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="group">
+
+                    <h2>About You</h2>
+
+                    <div class="grid">
+
+                        <div class="field">
+
+                            <label for="first" class="req">
+                                First name
+                            </label>
+
+                            <input
+                                id="first"
+                                name="first"
+                                type="text"
+                                required
+                                placeholder="Juan"
+                            >
+
+                            <p class="err">
+                                Enter your first name.
+                            </p>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="last" class="req">
+                                Last name
+                            </label>
+
+                            <input
+                                id="last"
+                                name="last"
+                                type="text"
+                                required
+                                placeholder="Dela Cruz"
+                            >
+
+                            <p class="err">
+                                Enter your last name.
+                            </p>
+
+                        </div>
+
+
+                        <fieldset class="field choice">
+
+                            <legend>Gender</legend>
+
+                            <div class="options">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="male"
+                                        required
+                                    >
+                                    Male
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="female"
+                                    >
+                                    Female
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <div class="field">
+
+                            <label for="dob" class="req">
+                                Date of birth
+                            </label>
+
+                            <input
+                                id="dob"
+                                name="dob"
+                                type="text"
+                                required
+                                maxlength="10"
+                                placeholder="DD-MM-YYYY"
+                            >
+
+                            <p class="hint">
+                                Format: DD-MM-YYYY
+                            </p>
+
+                            <p class="err">
+                                Use the format DD-MM-YYYY.
+                            </p>
+
+                        </div>
+
+
+                        <fieldset class="field choice full">
+
+                            <legend>Languages Spoken</legend>
+
+                            <div class="options">
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="language"
+                                        value="cebuano"
+                                    >
+                                    Cebuano
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="language"
+                                        value="tagalog"
+                                    >
+                                    Tagalog
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="language"
+                                        value="english"
+                                    >
+                                    English
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="language"
+                                        value="others"
+                                    >
+                                    Others
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <div class="field full">
+
+                            <label for="religion" class="req">
+                                Religion
+                            </label>
+
+                            <select
+                                id="religion"
+                                name="religion"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Select your religion
+                                </option>
+
+                                <option>Roman Catholic</option>
+                                <option>Islam</option>
+                                <option>Iglesia ni Cristo</option>
+                                <option>Protestant / Evangelical</option>
+                                <option>Aglipayan</option>
+                                <option>Seventh-day Adventist</option>
+                                <option>Buddhism</option>
+                                <option>Others</option>
+                                <option>Prefer not to say</option>
+
+                            </select>
+
+                            <p class="err">
+                                Choose an option from the list.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="group">
+
+                    <h2>Contact</h2>
+
+                    <div class="grid">
+
+                        <div class="field">
+
+                            <label for="email" class="req">
+                                Email
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                required
+                                placeholder="juan@example.com"
+                            >
+
+                            <p class="err">
+                                Enter a valid email.
+                            </p>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="mobile" class="req">
+                                Mobile Number
+                            </label>
+
+                            <input
+                                id="mobile"
+                                name="mobile"
+                                type="tel"
+                                required
+                                placeholder="09123456789"
+                            >
+
+                            <p class="hint">
+                                Numbers only.
+                            </p>
+
+                            <p class="err">
+                                Use numbers only.
+                            </p>
+
+                        </div>
+
+
+                        <div class="field full">
+
+                            <label for="address" class="req">
+                                Address
+                            </label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="4"
+                                required
+                                placeholder="Street, barangay, municipality, province"
+                            ></textarea>
+
+                            <p class="err">
+                                Enter your address.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="group">
+
+                    <h2>Upload</h2>
+
+                    <div class="field">
+
+                        <label for="upload">
+                            Resume or Display Picture
+                        </label>
+
+                        <input
+                            id="upload"
+                            name="upload"
+                            type="file"
+                            accept="image/*,.pdf,.doc,.docx"
+                        >
+
+                        <p class="hint">
+                            Choose an image, PDF or Word file.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <div class="actions">
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Submit Registration
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn ghost"
+                    >
+                        Clear Form
+                    </button>
+
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+
+    <section
+        id="success"
+        class="overlay"
+        role="alert"
+        aria-labelledby="success-title"
+    >
+
+        <div class="dialog">
+
+            <div class="dialog-body">
+
+                <h2 id="success-title">
+                    Registration Submitted
+                </h2>
+
+                <p>
+                    Your registration was successfully submitted.
+                </p>
+
+                <a
+                    class="btn"
+                    href="index.html"
+                >
+                    Back to the Form
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
